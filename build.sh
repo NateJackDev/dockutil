@@ -9,4 +9,4 @@ echo packaging verion: $VERSION
 OUTFILE="${OUTPUTDIR}/dockutil-${VERSION}.pkg"
 pkgbuild --root "$PKGROOT" --identifier dockutil.cli.tool --version $VERSION "$OUTFILE"
 echo $OUTFILE
-open $OUTPUTDIR
+sudo installer -verbose -pkg $OUTPUTDIR/dockutil-2.0.5.pkg -target /
